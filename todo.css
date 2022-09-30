@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  background-color: #f7f4eb;
+}
+
+.wall {
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 10px rgb(212, 212, 212);
+  background-color: #fdf4dc;
+  width: 600px;
+  max-height: 600px;
+  overflow: auto;
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+}
+
+/*This part of the stylesheet deals with the style of the button and the text input element */
+
+#add, #txt {
+  margin: 0px 5px 0px 5px;
+}
+
+#add {
+  border: none;
+  background-color: #f8e3aa;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px 1px grey;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+#add:active {
+  box-shadow: 1px 1px 2px 0px grey;
+}
+
+#add:hover {
+  background-color: #f3d88e ;
+}
+
+#txt {
+  border: none;
+  width: 150px;
+  height: 30px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px 1px grey;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*This part of the stylesheet deals with how the tasks are styled */
+
+.tasks {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.task {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px 1px grey;
+  background-color: #f3d88e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  color: rgb(75, 75, 75);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.icons i {
+  font-size: 25px;
+  color: rgb(75, 75, 75);
+  transition: 0.3s;
+}
+
+.icons i:hover {
+  color: white;
+}
+
+.task p {
+  max-width: 300px;
+  overflow-wrap: break-word;
+}
+
+.task input {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border: none;
+  width: 150px;
+  height: 20px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px 1px grey;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
