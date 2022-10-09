@@ -37,6 +37,7 @@ add.addEventListener('click', function(event) {
       input.setAttribute('placeholder', 'Entry Value');
 
       task.prepend(input);
+      input.value = taskText.innerHTML;
       taskText.remove();
 
       input.onkeydown = function(event) {
@@ -84,6 +85,7 @@ txt.addEventListener('keydown', function(event) {
       input.setAttribute('placeholder', 'Entry Value');
 
       task.prepend(input);
+      input.value = taskText.innerHTML;
       taskText.remove();
 
       input.onkeydown = function(event) {
